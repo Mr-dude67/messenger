@@ -1,0 +1,85 @@
+html, body { 
+
+	background-color: #ffece6;
+	cursor: none !important;
+	font-family: "Comic Sans MS";
+	text-align: center;
+	
+}
+
+#cursor {
+	
+	left: 0;
+	top: 0;
+	
+	width: 20px;
+	height: 20px;
+	background-color: #ff8c69;
+	border-radius: 50%;
+	
+	position: fixed;
+	pointer-events: none;
+	
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+	
+	transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+	
+}
+
+.button, a {
+	
+	cursor: none !important;
+	
+}
+
+.button {
+	
+	display: inline-box;
+	align-items: center;
+	justify-items: center;
+	gap: 20px;
+	
+	background-color: #F88379;
+	border: none;
+	color: white;
+	
+	position: absolute;
+	left: 50%;
+	top: 62vh;
+	border-radius: 25px;
+	outline: 2px solid red;
+	
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 0.2s ease-in-out 0.1s;
+	
+}
+
+.button:active {
+	
+	transform: translate(-50%, -50%) scale(1.03);
+	
+	transition: transform 0.1s ease-in-out 0s;
+	
+}
+
+#message-box {
+
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	
+	padding: 15px;
+	
+	text-align: left;
+	white-space: pre-line;
+	
+	left: 50%;
+	top: 90px;
+	
+	background-color: white;
+	border-radius: 25px;
+	
+	transform: translateX(-50%);
+	
+}
