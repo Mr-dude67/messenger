@@ -44,11 +44,11 @@ service.onmessage = (msg) => {
 	console.log("New msg:", msg.data);
 	msg_count++;
 	
-	if (msg_count < 13) {
+	if (msg_count < 20) {
 		messageBox.append(msg.data +'\n');
 	};
 	
-	if (msg_count > 13) {
+	if (msg_count > 20) {
 		messageBox.textContent = '';
 		messageBox.append(msg.data +'\n');
 		msg_count = 1;
