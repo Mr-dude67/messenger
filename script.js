@@ -16,7 +16,6 @@ window.onmouseup = () => { cursor.style.width = '20px'; cursor.style.height = '2
 
 // message system
 
-console.log(PIEHOST_API_KEY)
 const service = new WebSocket("wss://free.blr2.piesocket.com/v3/1?api_key=yo3iC0MgCTn4bZJ7Tk7qaCZKni21BsEXjU86Xdf0&notify_self=");
 
 const messageBox = document.getElementById("message-box");
