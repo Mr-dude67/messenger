@@ -11,13 +11,27 @@
 	
 	<div id="cursor"></div>
 	
-	<input placeholder="Username" style="cursor: none; position: absolute; left: 20vw;" id="username"></input>
+	<input placeholder="Username" style="cursor: none; position: absolute; left: 26vw; font-size: 16px;" id="username"></input>
 	
 	<div id="message-box"></div>
-	
-	<input id="input" style="cursor: none; position: relative; top: 72vh;" placeholder="Enter message here"></input>
-	
 	<button onclick="input_msg()" class="button">Send Message</button>
+	
+	<input id="input" style="cursor: none; position: relative; top: 72vh; font-size: 16px;" placeholder="Enter message here"></input>
+	
+	
+	<div id="emoji-box">
+		<p>Emojis:</p>
+		
+		<button onclick="smileyInsert()" class="emoji-button">
+			<img alt="Smiley emoji, click button to insert" src="smiley_emoji.jpg" class="emoji" draggable="false"></img>
+		</button>
+		
+		<button onclick="poopInsert()" class="emoji-button">
+			<img alt="Poop emoji, click button to insert" src="poop_emoji.jpg" class="emoji" draggable="false"></img>
+		</button>
+		
+	</div>
+	
 
 	<script src="script.js" defer></script>
 </body>

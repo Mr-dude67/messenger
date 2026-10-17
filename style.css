@@ -43,6 +43,7 @@ html, body {
 	background-color: #F88379;
 	border: none;
 	color: white;
+	font-size: 16px;
 	
 	position: absolute;
 	left: 50%;
@@ -82,4 +83,69 @@ html, body {
 	
 	transform: translateX(-50%);
 	
+}
+
+#emoji-box {
+	
+	display: flex;
+	position: relative;
+	height: 50px;
+	width: 300px;
+	
+	padding: 15px;
+	gap: 20px;
+	
+	text-align: left;
+	white-space: pre-line;
+	
+	left: 50%;
+	top: 80vh;
+	
+	background-color: white;
+	border-radius: 25px;
+	
+	transform: translate(-50%, -50%);
+	
+}
+
+.emoji-button {
+	
+	background: none;
+	
+	position: relative;
+	
+	width: 40px;
+	height: 40px;
+	
+	border: none; 
+	cursor: none;
+	
+}
+
+.emoji {
+	
+	width: 40px;
+	height: 40px;
+	
+	transform: translate(0%, 0%) scale(1);
+	transition: transform 0.5s ease-in-out 0.2s;
+	
+	filter: brightness(100%);
+	
+}
+
+.emoji:active {
+	
+	transform: translate(0%, 0%) scale(1.1);
+	
+	transition: transform 0.08s ease-in-out 0.1s;
+	
+	filter: brightness(120%);
+	
+}
+
+@media (hover:none) {
+	#cursor {
+		display: none !important;
+	}	
 }
