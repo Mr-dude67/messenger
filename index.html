@@ -11,13 +11,14 @@
 	
 	<div id="cursor"></div>
 	
-	<input placeholder="Username" style="cursor: none; position: absolute; left: 26vw; font-size: 16px;" id="username"></input>
+	<input placeholder="Username" style="cursor: none; position: absolute; left: 50%; transform: translateX(-50%); width: 200px; height: 60px;" id="username"></input>
 	
 	<div id="message-box"></div>
-	<button onclick="input_msg()" class="button">Send Message</button>
 	
-	<input id="input" style="cursor: none; position: relative; top: 72vh; font-size: 16px;" placeholder="Enter message here"></input>
-	
+	<div id="message-div">
+		<input id="input" placeholder="Enter message here"></input>
+		<button onclick="input_msg()" class="button">➡️</button>
+	</div>
 	
 	<div id="emoji-box">
 		<p>Emojis:</p>

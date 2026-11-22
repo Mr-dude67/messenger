@@ -35,32 +35,61 @@ html, body {
 
 .button {
 	
-	display: inline-box;
-	align-items: center;
-	justify-items: center;
-	gap: 20px;
+	position: relative;
 	
 	background-color: #F88379;
 	border: none;
 	color: white;
-	font-size: 16px;
 	
-	position: absolute;
-	left: 50%;
-	top: 71vh;
-	border-radius: 25px;
+	width: 50px;
+	height: 50px;
+	
+	font-size: 16px;
+	border-radius: 100%;
 	outline: 2px solid red;
 	
-	transform: translate(-50%, -50%) scale(1);
+	transform: translate(-0%, -0%) scale(1);
 	transition: transform 0.2s ease-in-out 0.1s;
 	
 }
 
-.button:active {
+.button:hover {
 	
-	transform: translate(-50%, -50%) scale(1.03);
+	transform: translate(-0%, -0%) scale(1.05);
 	
 	transition: transform 0.1s ease-in-out 0s;
+	
+}
+
+#input {
+	
+	cursor: none;
+	position: relative;
+	
+	width: 200px;
+	height: 70px;
+	
+	font-size: 20px;
+	border-radius: 25px;
+	border: 2px solid #F88379;
+	
+}
+
+#message-div {
+	
+	display: flex;
+	position: absolute;
+	
+	gap: 20px;
+	align-items: center;
+	
+	width: 300px;
+	height: 130px;
+	
+	left: 50%;
+	top: 78vh;
+	
+	transform: translate(-50%, -50%);
 	
 }
 
@@ -92,14 +121,13 @@ html, body {
 	height: 50px;
 	width: 300px;
 	
+	align-items: center;
+	
 	padding: 15px;
 	gap: 20px;
 	
-	text-align: left;
-	white-space: pre-line;
-	
 	left: 50%;
-	top: 80vh;
+	top: 90vh;
 	
 	background-color: white;
 	border-radius: 25px;

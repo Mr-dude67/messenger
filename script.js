@@ -34,7 +34,9 @@ userName.addEventListener('input', (event) => {
 let msg_count = 0;
 
 function input_msg() {
-	service.send(userName.value + ': ' + input.value);
+	if (input.value.trim()) {
+		service.send(userName.value + ': ' + input.value);
+	}
 	input.value = '';
 };
 
@@ -60,6 +62,15 @@ service.onmessage = (msg) => {
 		messageBox.append(msg.data + '\n');
 	};
 };
+
+
+// pressing enter to send a message 
+
+input.addEventListener("keydown", (e) => {
+	if (event.key === "Enter") {
+		input_msg()
+	}
+});
 
 
 // Emoji system
